@@ -209,7 +209,7 @@
 		};
 
 		tab {
-			timeout-ms            = <12>;
+			timeout-ms            = <COMBO_TERM_FAST>;
 			require-prior-idle-ms = <COMBO_IDLE_SLOW>;
 			key-positions         = <17 18>;
 			bindings              = <&kp TAB>;
@@ -219,7 +219,7 @@
 		// Hold for ALT+LCTRL, tap for ESC
 		esc {
 			timeout-ms            = <COMBO_TERM_SLOW>;
-			require-prior-idle-ms = <200>;
+			require-prior-idle-ms = <COMBO_IDLE_SLOW>;
 			key-positions         = <30 31>;
 			bindings              = <&esc_acl LA(LCTRL) ESC>;
 			layers                = <COMBOLAYERS>;
@@ -350,7 +350,7 @@
 		};
 
 		left_bracket {
-			timeout-ms            = <25>;
+			timeout-ms            = <COMBO_TERM_SLOW>;
 			require-prior-idle-ms = <COMBO_IDLE_FAST>;
 			key-positions         = <23 24>;
 			bindings              = <&mm_lbracket>;
@@ -358,7 +358,7 @@
 		};
 
 		right_bracket {
-			timeout-ms            = <25>;
+			timeout-ms            = <COMBO_TERM_SLOW>;
 			require-prior-idle-ms = <COMBO_IDLE_FAST>;
 			key-positions         = <24 25>;
 			bindings              = <&mm_rbracket>;
@@ -383,7 +383,7 @@
 
 		// Hold for CTRL+SHIFT, tap for parenthesis
 		lparen {
-			timeout-ms            = <50>;
+			timeout-ms            = <COMBO_TERM_FAST>;
 			require-prior-idle-ms = <COMBO_IDLE_FAST>;
 			key-positions         = <41 42>;
 			bindings              = <&lparen_csr RC(RIGHT_SHIFT) 0>;
@@ -392,7 +392,7 @@
 
 		// Hold for ALT+CTRL, tap for parenthesis
 		rparen {
-			timeout-ms            = <50>;
+			timeout-ms            = <COMBO_TERM_FAST>;
 			require-prior-idle-ms = <COMBO_IDLE_FAST>;
 			key-positions         = <42 43>;
 			bindings              = <&rparen_csr RA(RIGHT_CONTROL) 0>;
@@ -409,7 +409,7 @@
 
 		quote {
 			timeout-ms            = <COMBO_TERM_SLOW>;
-			require-prior-idle-ms = <100>;
+			require-prior-idle-ms = <COMBO_IDLE_FAST>;
 			key-positions         = <54 55>;
 			bindings              = <&kp SQT>;
 			layers                = <COMBOLAYERS>;
@@ -417,7 +417,7 @@
 
 		lbrace {
 			timeout-ms            = <COMBO_TERM_SLOW>;
-			require-prior-idle-ms = <20>;
+			require-prior-idle-ms = <COMBO_IDLE_FAST>;
 			key-positions         = <55 56>;
 			bindings              = <&mm_lbrace>;
 			layers                = <COMBOLAYERS>;
