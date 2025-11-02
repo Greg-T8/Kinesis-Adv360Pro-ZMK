@@ -993,7 +993,7 @@
 			___  ___  ___               ___     ___                 ___  XXX                                &mo MOD  ___               ___               ___              ___                 ___  ___
 			___  ___  ___               ___     ___                 ___  ___                                ___      ___               ___               ___              ___                 ___  ___
 			___  ___  &nav_left 0 LEFT  &close  &nav_right 0 RIGHT  ___  ___       ___  ___  ___  ___       ___      &nav_left 0 LEFT  &mt LC(END) DOWN  &mt LC(HOME) UP  &nav_right 0 RIGHT  ___  ___
-			___  ___  ___                           ___     ___                               ___                 ___  ___                     ___               &kp PG_UP         &kp PG_DN        ___                 ___  ___
+			___  ___  ___               ___     ___                 ___                 ___  ___                     ___               &kp PG_UP         &kp PG_DN        ___                 ___  ___
 			___  ___  ___               ___     ___                           ___  ___  ___  ___  ___  ___                             ___               ___              ___                 ___  ___
 			>;
 		};
@@ -1003,7 +1003,7 @@
 		// -------------------------------------------------------------------------
 		fn {
 			bindings = <
-			___  ___      ___     ___     ___     ___  XXX                                 &mo MOD  ___  ___    ___  ___  ___  ___
+			___  ___      ___     ___     ___     ___  XXX                                 &mo MOD  ___  ___  ___  ___  ___  ___
 			___  &kp F12  &kp F7  &kp F8  &kp F9  ___  ___                                 ___      ___  ___  ___  ___  ___  ___
 			___  &kp F11  &kp F4  &kp F5  &kp F6  ___  ___       ___  ___  ___  ___        ___      ___  ___  ___  ___  ___  ___
 			___  &kp F10  &kp F1  &kp F2  &kp F3  ___                 ___  ___                      ___  ___  ___  ___  ___  ___
@@ -1017,11 +1017,11 @@
 		// -------------------------------------------------------------------------
 		game {
 			bindings = <
-			&kp ESC    &kp N1  &kp N2  &kp N3   &kp N4  &kp N5  ___                                                                  &mo MOD  ___    ___     &kp N8     &kp N9    &kp N0    ___
-			&kp TAB    &kp Q   &kp W   &kp E    &kp R   &kp T   &kp I                                                                &none    &kp Y  &kp U   &kp I      &kp O     &kp P     &kp BSLH
-			&kp CAPS   &kp A   &kp S   &kp D    &kp F   &kp G   &kp M            &kp LALT   &kp TAB    &kp LGUI  &kp RCTRL           &none    &kp H  &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
-			&kp LSHFT  &kp Z   &kp X   &kp C    &kp V   &kp B                               &kp BSPC   &kp PG_UP                              &kp N  &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-			___        XXX     XXX     &kp H    &kp M                  &kp SPACE &kp LCTRL  &kp LALT  &kp DEL &kp ENTER &kp SPACE                 &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mo 2
+			&kp ESC    &kp N1  &kp N2  &kp N3   &kp N4  &kp N5  ___                                                                &mo MOD  ___    ___     &kp N8     &kp N9    &kp N0    ___
+			&kp TAB    &kp Q   &kp W   &kp E    &kp R   &kp T   &kp I                                                              &none    &kp Y  &kp U   &kp I      &kp O     &kp P     &kp BSLH
+			&kp CAPS   &kp A   &kp S   &kp D    &kp F   &kp G   &kp M            &kp LALT   &kp TAB    &kp LGUI  &kp RCTRL         &none    &kp H  &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
+			&kp LSHFT  &kp Z   &kp X   &kp C    &kp V   &kp B                               &kp BSPC   &kp PG_UP                            &kp N  &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
+			___        XXX     XXX     &kp H    &kp M                  &kp SPACE &kp LCTRL  &kp LALT  &kp DEL &kp ENTER &kp SPACE                  &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mo 2
 			>;
 		};
 
@@ -1030,11 +1030,11 @@
 		// -------------------------------------------------------------------------
 		mod {
 			bindings = <
-			XXX &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 XXX                                                       ___                     XXX  XXX         XXX         XXX  XXX  XXX
-			XXX XXX          XXX          XXX          XXX          XXX          &bootloader                                               &bootloader             XXX  XXX         XXX         XXX  XXX  XXX
-			XXX XXX          XXX          XXX          XXX          XXX          ___          XXX XXX &bt BT_CLR  XXX                      &rgb_ug RGB_MEFS_CMD 5  XXX  XXX         XXX         XXX  XXX  XXX
-			XXX XXX          XXX          XXX          &macro_ver   XXX                           XXX XXX                                                          XXX  XXX         XXX         XXX  XXX  XXX
-			XXX XXX          XXX          XXX          XXX                                XXX XXX XXX XXX         &bl BL_TOG &rgb_ug RGB_TOG                            &bl BL_INC  &bl BL_DEC  XXX  XXX  XXX
+			XXX &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 XXX                                                      ___                     XXX  XXX         XXX         XXX  XXX  XXX
+			XXX XXX          XXX          XXX          XXX          XXX          &bootloader                                              &bootloader             XXX  XXX         XXX         XXX  XXX  XXX
+			XXX XXX          XXX          XXX          XXX          XXX          ___              XXX XXX &bt BT_CLR     XXX              &rgb_ug RGB_MEFS_CMD 5  XXX  XXX         XXX         XXX  XXX  XXX
+			XXX XXX          XXX          XXX          &macro_ver   XXX                               XXX XXX                                                     XXX  XXX         XXX         XXX  XXX  XXX
+			XXX XXX          XXX          XXX          XXX                                    XXX XXX XXX XXX &bl BL_TOG &rgb_ug RGB_TOG                               &bl BL_INC  &bl BL_DEC  XXX  XXX  XXX
 			>;
 		};
 	};
