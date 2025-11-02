@@ -79,7 +79,7 @@
 // -------------------------------------------------------------------------
 &lt {
     flavor = "hold-preferred";
-		require-prior-idle-ms = <50>;
+		require-prior-idle-ms = <15>;
     tapping-term-ms = <175>;
     quick_tap_ms = <275>;
 };
