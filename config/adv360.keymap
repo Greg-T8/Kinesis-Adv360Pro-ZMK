@@ -83,7 +83,7 @@
 // -------------------------------------------------------------------------
 &lt {
 	flavor = "hold-preferred";
-	require-prior-idle-ms = <100>;
+	require-prior-idle-ms = <125>;
 	tapping-term-ms = <175>;
 	quick_tap_ms = <0>;
 };
@@ -366,7 +366,7 @@
 		};
 
 		left_angle {
-			timeout-ms            = <25>;
+			timeout-ms            = <COMBO_TERM_SLOW>;
 			require-prior-idle-ms = <COMBO_IDLE_FAST>;
 			key-positions         = <23 24 25>;
 			bindings              = <&mm_lt>;
@@ -384,7 +384,7 @@
 		// Hold for CTRL+SHIFT, tap for parenthesis
 		lparen {
 			timeout-ms            = <50>;
-			require-prior-idle-ms = <20>;
+			require-prior-idle-ms = <COMBO_IDLE_FAST>;
 			key-positions         = <41 42>;
 			bindings              = <&lparen_csr RC(RIGHT_SHIFT) 0>;
 			layers                = <COMBOLAYERS>;
@@ -393,14 +393,14 @@
 		// Hold for ALT+CTRL, tap for parenthesis
 		rparen {
 			timeout-ms            = <50>;
-			require-prior-idle-ms = <20>;
+			require-prior-idle-ms = <COMBO_IDLE_FAST>;
 			key-positions         = <42 43>;
 			bindings              = <&rparen_csr RA(RIGHT_CONTROL) 0>;
 			layers                = <COMBOLAYERS>;
 		};
 
 		right_angle {
-			timeout-ms            = <25>;
+			timeout-ms            = <COMBO_TERM_SLOW>;
 			require-prior-idle-ms = <COMBO_IDLE_FAST>;
 			key-positions         = <41 42 43>;
 			bindings              = <&mm_gt>;
