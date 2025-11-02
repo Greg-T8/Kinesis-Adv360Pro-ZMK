@@ -16,15 +16,15 @@
 // Layer Definitions
 // -------------------------------------------------------------------------
 
-#define DEFAULT    0
-#define NUM        1
-#define NAV        2
-#define ALTNAV     3
-#define FN         4
-#define GAME       5
-#define MOD        6
+#define DEFAULT  0
+#define NUM      1
+#define NAV      2
+#define ALTNAV   3
+#define FN       4
+#define GAME     5
+#define MOD      6
 
-#define COMBOLAYERS DEFAULT NUM NAV FN ALTNAV
+#define COMBOLAYERS DEFAULT NUM NAV ALTNAV FN
 
 // Special Key Definitions
 // -------------------------------------------------------------------------
