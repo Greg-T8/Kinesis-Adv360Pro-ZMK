@@ -71,7 +71,7 @@
 #define COMBO_TERM_SLOW 250
 
 // Larger idle time reduces accidental combos when typing fast
-#define COMBO_IDLE_FAST 120
+#define COMBO_IDLE_FAST 130
 #define COMBO_IDLE_SLOW 250
 
 // =========================================================================
@@ -83,9 +83,9 @@
 // -------------------------------------------------------------------------
 &lt {
 	flavor = "hold-preferred";
-	require-prior-idle-ms = <125>;
+	require-prior-idle-ms = <130>;
 	tapping-term-ms = <175>;
-	quick_tap_ms = <0>;
+	quick_tap_ms = <180>;
 };
 
 // -------------------------------------------------------------------------
