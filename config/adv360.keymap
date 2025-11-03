@@ -608,7 +608,7 @@
 		ltl: layer_tap_left_thumb {
 			compatible            = "zmk,behavior-hold-tap";
 			#binding-cells        = <2>;
-			bindings              = <&kp>, <&kp>;
+			bindings              = <&mo>, <&kp>;
 			flavor                = "tap-preferred";
 			require-prior-idle-ms = <130>;
 			tapping-term-ms       = <175>;
@@ -618,7 +618,7 @@
 		rtl: layer_tap_right_thumb {
 			compatible            = "zmk,behavior-hold-tap";
 			#binding-cells        = <2>;
-			bindings              = <&kp>, <&kp>;
+			bindings              = <&mo>, <&kp>;
 			flavor                = "hold-preferred";
 			require-prior-idle-ms = <130>;
 			tapping-term-ms       = <175>;
