@@ -198,6 +198,15 @@
 			layers                = <COMBOLAYERS>;
 		};
 
+        // Right hand CTRL+SHIFT
+        right-hand-control-shift {
+            timeout-ms            = <COMBO_TERM_FAST>;
+            require-prior-idle-ms = <COMBO_IDLE_SLOW>;
+            key-positions         = <41 42>;
+            bindings              = <&kp RC(RIGHT_SHIFT)>;
+            layers                = <COMBOLAYERS>;
+        };
+
 		// -------------------------------------------------------------------------
 		// Left Hand - Horizontal Combos
 		// -------------------------------------------------------------------------
