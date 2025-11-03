@@ -420,7 +420,7 @@
 
 		quote {
 			timeout-ms            = <COMBO_TERM_SLOW>;
-			require-prior-idle-ms = <COMBO_IDLE_FAST>;
+			require-prior-idle-ms = <75>;               // changed from COMBO_IDLE_FAST to 75
 			key-positions         = <54 55>;
 			bindings              = <&kp SQT>;
 			layers                = <COMBOLAYERS>;
