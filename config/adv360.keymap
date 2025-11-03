@@ -57,8 +57,8 @@
 7  8  9  10 11 12 13 \
 21 22 23 24 25 26 27 \
 39 40 41 42 43 44 45 \
-   54 55 56 57 58 59 \
-      71 72 73 74 75
+54 55 56 57 58 59 \
+71 72 73 74 75
 
 #define THUMBS_LEFT  35 36 52 65 66 67
 #define THUMBS_RIGHT 37 38 53 68 69 70
@@ -539,7 +539,7 @@
 			bindings                   = <&kp>, <&kp>;
 			flavor                     = "hold-preferred";
 			tapping-term-ms            = <280>;
-			require-prior-idle-ms      = <180>;     // Change history: 170 to 180
+			require-prior-idle-ms      = <180>;// Change history: 170 to 180
 			quick-tap-ms               = <5>;
 			hold-trigger-key-positions = <KEYS_RIGHT THUMBS_RIGHT 17>;
 			hold-trigger-on-release;
@@ -600,6 +600,31 @@
 			hold-trigger-key-positions = <KEYS_LEFT THUMBS_LEFT THUMBS_RIGHT>;
 			hold-trigger-on-release;
 		};
+
+		// -------------------------------------------------------------------------
+		// Thumb Key Hold-Tap Behaviors
+		// -------------------------------------------------------------------------
+
+		ltl: layer_tap_left_thumb {
+			compatible            = "zmk,behavior-hold-tap";
+			#binding-cells        = <2>;
+			bindings              = <&kp>, <&kp>;
+			flavor                = "tap-preferred";
+			require-prior-idle-ms = <130>;
+			tapping-term-ms       = <175>;
+			quick_tap_ms          = <180>;
+		};
+
+		rtl: layer_tap_right_thumb {
+			compatible            = "zmk,behavior-hold-tap";
+			#binding-cells        = <2>;
+			bindings              = <&kp>, <&kp>;
+			flavor                = "hold-preferred";
+			require-prior-idle-ms = <130>;
+			tapping-term-ms       = <175>;
+			quick_tap_ms          = <180>;
+		};
+
 
 		// -------------------------------------------------------------------------
 		// Special Hold-Tap Behaviors
@@ -956,11 +981,11 @@
 
 		default {
 			bindings = <
-			&tog GAME  &mm_1        &mm_2        &mm_3         &mm_4          &mm_5  XXX                                                                                      &mo MOD  &mm_6  &mm_7          &mm_8          &mm_9         &mm_0           &tog GAME
-			&kp TAB    &kp Q        &kp W        &kp E         &kp R          &kp T  XXX                                                                                      XXX      &kp Y  &kp U          &kp I          &kp O         &kp P           XXX
-			&kp ENTER  &tml LGUI A  &hml LALT S  &hml LCTRL D  &hmlf LSHFT F  &kp G  XXX                 XXX            XXX         XXX      XXX                              XXX      &kp H  &hmrj RSHFT J  &hmr RCTRL K   &hmr RALT L   &hmr RGUI SEMI  &kp ENTER
-			XXX        &kp Z        &kp X        &kp C         &kp V          &kp B                                     XXX         XXX                                                &kp N  &kp M          &mm_comma      &mm_dot       &kp FSLH        XXX
-			XXX        XXX          XXX          XXX           XXX                        &lt NAV SPACE  &lts FN LSHFT  &atb 0 DEL  &kp DEL  &mts LSHFT LSHFT  &lt NUM SPACE                  XXX            XXX            XXX           XXX             XXX
+			&tog GAME  &mm_1        &mm_2        &mm_3         &mm_4          &mm_5  XXX                                                                                        &mo MOD  &mm_7  &mm_7          &mm_8          &mm_9         &mm_0           &tog GAME
+			&kp TAB    &kp Q        &kp W        &kp E         &kp R          &kp T  XXX                                                                                        XXX      &kp Y  &kp U          &kp I          &kp O         &kp P           XXX
+			&kp ENTER  &tml LGUI A  &hml LALT S  &hml LCTRL D  &hmlf LSHFT F  &kp G  XXX                  XXX            XXX         XXX      XXX                               XXX      &kp H  &hmrj RSHFT J  &hmr RCTRL K   &hmr RALT L   &hmr RGUI SEMI  &kp ENTER
+			XXX        &kp Z        &kp X        &kp C         &kp V          &kp B                                      XXX         XXX                                                 &kp N  &kp M          &mm_comma      &mm_dot       &kp FSLH        XXX
+			XXX        XXX          XXX          XXX           XXX                        &ltl NAV SPACE  &lts FN LSHFT  &atb 0 DEL  &kp DEL  &mts LSHFT LSHFT  &ltr NUM SPACE                  XXX            XXX            XXX           XXX             XXX
 			>;
 		};
 
