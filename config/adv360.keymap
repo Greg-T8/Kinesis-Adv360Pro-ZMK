@@ -360,8 +360,8 @@
 		};
 
 		right_bracket {
-			timeout-ms            = <COMBO_TERM_SLOW>;
-			require-prior-idle-ms = <COMBO_IDLE_FAST>;
+			timeout-ms            = <COMBO_TERM_MED>;
+			require-prior-idle-ms = <COMBO_IDLE_MED>;
 			key-positions         = <24 25>;
 			bindings              = <&mm_rbracket>;
 			layers                = <COMBOLAYERS>;
