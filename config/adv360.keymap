@@ -541,34 +541,8 @@
 		// Home Row Mods - Left Hand
 		// -------------------------------------------------------------------------
 
-		// F key - hold-preferred for better modifier activation
-		hmlf: home_row_mod_left_f {
-			compatible                 = "zmk,behavior-hold-tap";
-			#binding-cells             = <2>;
-			bindings                   = <&kp>, <&kp>;
-			flavor                     = "hold-preferred";
-			tapping-term-ms            = <280>;
-			require-prior-idle-ms      = <180>;// Change history: 170 to 180
-			quick-tap-ms               = <5>;
-			hold-trigger-key-positions = <KEYS_RIGHT THUMBS_RIGHT 17>;
-			hold-trigger-on-release;
-		};
-
-		// Standard home row mod for left hand (D, S, A keys)
-		hml: home_row_mod_left {
-			compatible                 = "zmk,behavior-hold-tap";
-			#binding-cells             = <2>;
-			bindings                   = <&kp>, <&kp>;
-			flavor                     = "balanced";
-			tapping-term-ms            = <280>;
-			require-prior-idle-ms      = <170>;
-			quick-tap-ms               = <QUICK_TAP>;
-			hold-trigger-key-positions = <KEYS_RIGHT THUMBS_RIGHT 17>;
-			hold-trigger-on-release;
-		};
-
-		// Tap-preferred variant for A key
-		tml: home_row_mod_left_tap {
+		// A key (LGUI) - tap-preferred for better tap responsiveness
+		hma: home_row_mod_left_a {
 			compatible                 = "zmk,behavior-hold-tap";
 			#binding-cells             = <2>;
 			bindings                   = <&kp>, <&kp>;
@@ -580,12 +554,51 @@
 			hold-trigger-on-release;
 		};
 
+		// S key (LALT) - balanced for reliable modifier activation
+		hms: home_row_mod_left_s {
+			compatible                 = "zmk,behavior-hold-tap";
+			#binding-cells             = <2>;
+			bindings                   = <&kp>, <&kp>;
+			flavor                     = "balanced";
+			tapping-term-ms            = <280>;
+			require-prior-idle-ms      = <170>;
+			quick-tap-ms               = <QUICK_TAP>;
+			hold-trigger-key-positions = <KEYS_RIGHT THUMBS_RIGHT 17>;
+			hold-trigger-on-release;
+		};
+
+		// D key (LCTRL) - balanced for reliable modifier activation
+		hmd: home_row_mod_left_d {
+			compatible                 = "zmk,behavior-hold-tap";
+			#binding-cells             = <2>;
+			bindings                   = <&kp>, <&kp>;
+			flavor                     = "balanced";
+			tapping-term-ms            = <280>;
+			require-prior-idle-ms      = <170>;
+			quick-tap-ms               = <QUICK_TAP>;
+			hold-trigger-key-positions = <KEYS_RIGHT THUMBS_RIGHT 17>;
+			hold-trigger-on-release;
+		};
+
+		// F key (LSHFT) - hold-preferred for better modifier activation
+		hmf: home_row_mod_left_f {
+			compatible                 = "zmk,behavior-hold-tap";
+			#binding-cells             = <2>;
+			bindings                   = <&kp>, <&kp>;
+			flavor                     = "hold-preferred";
+			tapping-term-ms            = <280>;
+			require-prior-idle-ms      = <180>;
+			quick-tap-ms               = <5>;
+			hold-trigger-key-positions = <KEYS_RIGHT THUMBS_RIGHT 17>;
+			hold-trigger-on-release;
+		};
+
 		// -------------------------------------------------------------------------
 		// Home Row Mods - Right Hand
 		// -------------------------------------------------------------------------
 
-		// J key - hold-preferred for better modifier activation
-		hmrj: home_row_mod_right_j {
+		// J key (RSHFT) - balanced for reliable modifier activation
+		hmj: home_row_mod_right_j {
 			compatible                 = "zmk,behavior-hold-tap";
 			#binding-cells             = <2>;
 			bindings                   = <&kp>, <&kp>;
@@ -597,8 +610,34 @@
 			hold-trigger-on-release;
 		};
 
-		// Standard home row mod for right hand (K, L, ; keys)
-		hmr: home_row_mod_right {
+		// K key (RCTRL) - balanced for reliable modifier activation
+		hmk: home_row_mod_right_k {
+			compatible                 = "zmk,behavior-hold-tap";
+			#binding-cells             = <2>;
+			bindings                   = <&kp>, <&kp>;
+			flavor                     = "balanced";
+			tapping-term-ms            = <280>;
+			require-prior-idle-ms      = <250>;
+			quick-tap-ms               = <QUICK_TAP>;
+			hold-trigger-key-positions = <KEYS_LEFT THUMBS_LEFT THUMBS_RIGHT>;
+			hold-trigger-on-release;
+		};
+
+		// L key (RALT) - balanced for reliable modifier activation
+		hml: home_row_mod_right_l {
+			compatible                 = "zmk,behavior-hold-tap";
+			#binding-cells             = <2>;
+			bindings                   = <&kp>, <&kp>;
+			flavor                     = "balanced";
+			tapping-term-ms            = <280>;
+			require-prior-idle-ms      = <250>;
+			quick-tap-ms               = <QUICK_TAP>;
+			hold-trigger-key-positions = <KEYS_LEFT THUMBS_LEFT THUMBS_RIGHT>;
+			hold-trigger-on-release;
+		};
+
+		// ; key (RGUI) - balanced for reliable modifier activation
+		hmc: home_row_mod_right_semi {
 			compatible                 = "zmk,behavior-hold-tap";
 			#binding-cells             = <2>;
 			bindings                   = <&kp>, <&kp>;
@@ -990,11 +1029,11 @@
 
 		default {
 			bindings = <
-			&tog GAME  &mm_1        &mm_2        &mm_3         &mm_4          &mm_5  XXX                                                                                        &mo MOD  &mm_7  &mm_7          &mm_8          &mm_9         &mm_0           &tog GAME
-			&kp TAB    &kp Q        &kp W        &kp E         &kp R          &kp T  XXX                                                                                        XXX      &kp Y  &kp U          &kp I          &kp O         &kp P           XXX
-			&kp ENTER  &tml LGUI A  &hml LALT S  &hml LCTRL D  &hmlf LSHFT F  &kp G  XXX                  XXX            XXX         XXX      XXX                               XXX      &kp H  &hmrj RSHFT J  &hmr RCTRL K   &hmr RALT L   &hmr RGUI SEMI  &kp ENTER
-			XXX        &kp Z        &kp X        &kp C         &kp V          &kp B                                      XXX         XXX                                                 &kp N  &kp M          &mm_comma      &mm_dot       &kp FSLH        XXX
-			XXX        XXX          XXX          XXX           XXX                        &ltl NAV SPACE  &lts FN LSHFT  &atb 0 DEL  &kp DEL  &mts LSHFT LSHFT  &rtl NUM SPACE                  XXX            XXX            XXX           XXX             XXX
+			&tog GAME  &mm_1        &mm_2        &mm_3         &mm_4         &mm_5  XXX                                                                                        &mo MOD  &mm_7  &mm_7         &mm_8         &mm_9         &mm_0           &tog GAME
+			&kp TAB    &kp Q        &kp W        &kp E         &kp R         &kp T  XXX                                                                                        XXX      &kp Y  &kp U         &kp I         &kp O         &kp P           XXX
+			&kp ENTER  &hma LGUI A  &hms LALT S  &hmd LCTRL D  &hmf LSHFT F  &kp G  XXX                  XXX            XXX         XXX      XXX                               XXX      &kp H  &hmj RSHFT J  &hmk RCTRL K  &hml RALT L   &hmc RGUI SEMI  &kp ENTER
+			XXX        &kp Z        &kp X        &kp C         &kp V         &kp B                                      XXX         XXX                                                 &kp N  &kp M         &mm_comma     &mm_dot       &kp FSLH        XXX
+			XXX        XXX          XXX          XXX           XXX                      &ltl NAV SPACE  &lts FN LSHFT  &atb 0 DEL  &kp DEL  &mts LSHFT LSHFT  &rtl NUM SPACE                   XXX           XXX           XXX           XXX             XXX
 			>;
 		};
 
@@ -1016,9 +1055,9 @@
 		// -------------------------------------------------------------------------
 		nav {
 			bindings = <
-			___  ___           ___           ___            ___            ___  XXX                                &mo MOD  ___               ___               ___              ___                 ___  ___
-			___  ___           &kp N7        &kp N8         &kp N9         ___  ___                                ___      ___               ___               ___              ___                 ___  ___
-			___  &tml LGUI N0  &hml LALT N4  &hml LCTRL N5  &hml LSHFT N6  ___  ___       ___  ___  ___  ___       ___      &nav_left 0 LEFT  &mt LC(END) DOWN  &mt LC(HOME) UP  &nav_right 0 RIGHT  ___  ___
+			___  ___          ___          ___           ___           ___  XXX                                &mo MOD  ___               ___               ___              ___                 ___  ___
+			___  ___          &kp N7       &kp N8        &kp N9        ___  ___                                ___      ___               ___               ___              ___                 ___  ___
+			___  &hma LGUI N0  &hms LALT N4  &hmd LCTRL N5  &hmf LSHFT N6  ___  ___       ___  ___  ___  ___       ___      &nav_left 0 LEFT  &mt LC(END) DOWN  &mt LC(HOME) UP  &nav_right 0 RIGHT  ___  ___
 			___  ___           &kp N1        &kp N2         &kp N3         ___                 ___  ___                     ___               &kp PG_UP         &kp PG_DN        ___                 ___  ___
 			___  ___           ___           ___            ___                      ___  ___  ___  ___  ___  ___                             ___               ___              ___                 ___  ___
 			>;
