@@ -668,7 +668,7 @@
 			#binding-cells        = <2>;
 			bindings              = <&mo>, <&kp>;
 			flavor                = "hold-preferred";
-			require-prior-idle-ms = <175>;
+			require-prior-idle-ms = <200>;
 			tapping-term-ms       = <175>;
 			quick_tap_ms          = <180>;
 		};
