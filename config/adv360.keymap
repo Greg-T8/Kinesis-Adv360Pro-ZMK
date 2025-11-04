@@ -62,6 +62,7 @@
 
 #define THUMBS_LEFT  35 36 52 65 66 67
 #define THUMBS_RIGHT 37 38 53 68 69 70
+#define NUM_LAYER_KEYS 16 17 18 29 30 31 32 48 49 50 44
 
 // -------------------------------------------------------------------------
 // Combo Timing Constants
@@ -664,13 +665,14 @@
 		};
 
 		rtl: layer_tap_right_thumb {
-			compatible            = "zmk,behavior-hold-tap";
-			#binding-cells        = <2>;
-			bindings              = <&mo>, <&kp>;
-			flavor                = "hold-preferred";
-			require-prior-idle-ms = <188>;                  // History: 175 > 200 > 188
-			tapping-term-ms       = <175>;
-			quick_tap_ms          = <180>;
+			compatible                 = "zmk,behavior-hold-tap";
+			#binding-cells             = <2>;
+			bindings                   = <&mo>, <&kp>;
+			flavor                     = "hold-preferred";
+			hold-trigger-key-positions = <NUM_LAYER_KEYS>;
+			require-prior-idle-ms      = <188>;                    // History: 175 > 200 > 188
+			tapping-term-ms            = <175>;
+			quick_tap_ms               = <180>;
 		};
 
 
