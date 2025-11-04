@@ -69,7 +69,7 @@
 // -------------------------------------------------------------------------
 
 #define COMBO_TERM_FAST 15
-#define COMBO_TERM_MED  175
+#define COMBO_TERM_MED  125
 #define COMBO_TERM_SLOW 250
 
 // Larger idle time reduces accidental combos when typing fast
@@ -362,8 +362,8 @@
 		};
 
 		left_bracket {
-			timeout-ms            = <COMBO_TERM_SLOW>;
-			require-prior-idle-ms = <COMBO_IDLE_FAST>;
+			timeout-ms            = <COMBO_TERM_MED>;
+			require-prior-idle-ms = <COMBO_IDLE_MED>;
 			key-positions         = <23 24>;
 			bindings              = <&mm_lbracket>;
 			layers                = <COMBOLAYERS>;
