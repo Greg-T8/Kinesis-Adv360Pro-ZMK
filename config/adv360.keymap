@@ -534,7 +534,7 @@
         td_t: tap_dance_t {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <275>;
+            tapping-term-ms = <137>;            // History: 275 > 137
             bindings = <&kp T>, <&kp LS(T)>;
         };
 
