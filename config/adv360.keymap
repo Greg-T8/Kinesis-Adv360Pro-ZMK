@@ -482,13 +482,6 @@
 			layers                = <COMBOLAYERS>;
 		};
 
-		grave {
-			timeout-ms            = <COMBO_TERM_SLOW>;
-			key-positions         = <40 54>;
-			bindings              = <&kp GRAVE>;
-			layers                = <COMBOLAYERS>;
-		};
-
 		minus {
 			timeout-ms            = <COMBO_TERM_SLOW>;
 			key-positions         = <41 55>;
@@ -496,10 +489,10 @@
 			layers                = <COMBOLAYERS>;
 		};
 
-		slash {
+		grave {
 			timeout-ms            = <COMBO_TERM_SLOW>;
 			key-positions         = <42 56>;
-			bindings              = <&kp SLASH>;
+			bindings              = <&kp GRAVE>;
 			layers                = <COMBOLAYERS>;
 		};
 
