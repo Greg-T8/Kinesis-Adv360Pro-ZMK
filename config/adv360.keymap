@@ -363,7 +363,7 @@
 
 		left_bracket {
 			timeout-ms            = <COMBO_TERM_MED>;
-			require-prior-idle-ms = <123>;                   // History: 130 > 75 > 102 > 116 > 123
+			require-prior-idle-ms = <130>;                   // History: 130 > 75 > 102 > 116 > 123 > 130
 			key-positions         = <23 24>;
 			bindings              = <&mm_lbracket>;
 			layers                = <COMBOLAYERS>;
@@ -371,7 +371,7 @@
 
 		right_bracket {
 			timeout-ms            = <COMBO_TERM_MED>;
-			require-prior-idle-ms = <123>;
+			require-prior-idle-ms = <130>;
 			key-positions         = <24 25>;
 			bindings              = <&mm_rbracket>;
 			layers                = <COMBOLAYERS>;
