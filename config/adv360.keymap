@@ -261,6 +261,13 @@
 			layers                = <COMBOLAYERS>;
 		};
 
+		grave {
+			timeout-ms            = <COMBO_TERM_SLOW>;
+			key-positions         = <50 51>;
+			bindings              = <&kp GRAVE>;
+			layers                = <COMBOLAYERS>;
+		};
+
 		// -------------------------------------------------------------------------
 		// Left Hand - Vertical Combos (Symbols)
 		// -------------------------------------------------------------------------
@@ -489,12 +496,6 @@
 			layers                = <COMBOLAYERS>;
 		};
 
-		grave {
-			timeout-ms            = <COMBO_TERM_SLOW>;
-			key-positions         = <42 56>;
-			bindings              = <&kp GRAVE>;
-			layers                = <COMBOLAYERS>;
-		};
 
 		pipe {
 			timeout-ms            = <COMBO_TERM_SLOW>;
