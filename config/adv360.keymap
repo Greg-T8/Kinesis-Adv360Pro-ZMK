@@ -363,7 +363,7 @@
 
 		left_bracket {
 			timeout-ms            = <COMBO_TERM_MED>;
-			require-prior-idle-ms = <75>;                   // History: 130 > 75
+			require-prior-idle-ms = <102>;                   // History: 130 > 75 > 102
 			key-positions         = <23 24>;
 			bindings              = <&mm_lbracket>;
 			layers                = <COMBOLAYERS>;
