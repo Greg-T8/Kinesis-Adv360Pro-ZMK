@@ -69,7 +69,7 @@
 // -------------------------------------------------------------------------
 
 #define COMBO_TERM_FAST 15
-#define COMBO_TERM_MED  125
+#define COMBO_TERM_MED  70         // History: 125 > 70
 #define COMBO_TERM_SLOW 250
 
 // Larger idle time reduces accidental combos when typing fast
@@ -371,7 +371,7 @@
 
 		right_bracket {
 			timeout-ms            = <COMBO_TERM_MED>;
-			require-prior-idle-ms = <75>;
+			require-prior-idle-ms = <102>;
 			key-positions         = <24 25>;
 			bindings              = <&mm_rbracket>;
 			layers                = <COMBOLAYERS>;
