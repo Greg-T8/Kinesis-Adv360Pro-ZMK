@@ -663,7 +663,7 @@
 			bindings                   = <&mo>, <&kp>;
 			flavor                     = "hold-preferred";
 			hold-trigger-key-positions = <NUM_LAYER_KEYS>;
-			require-prior-idle-ms      = <250>;                    // History: 175 > 200 > 188 > 150 > 169 > 250
+			require-prior-idle-ms      = <209>;                    // History: 175 > 200 > 188 > 150 > 169 > 250 > 209
 			tapping-term-ms            = <175>;
 			quick_tap_ms               = <180>;
 		};
