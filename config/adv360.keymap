@@ -568,7 +568,7 @@
 			bindings                   = <&kp>, <&kp>;
 			flavor                     = "hold-preferred";
 			tapping-term-ms            = <280>;
-			require-prior-idle-ms      = <170>;
+			require-prior-idle-ms      = <220>;             // History: 170 > 220
 			quick-tap-ms               = <QUICK_TAP>;
 			hold-trigger-key-positions = <KEYS_RIGHT THUMBS_RIGHT 17>;
 			hold-trigger-on-release;
