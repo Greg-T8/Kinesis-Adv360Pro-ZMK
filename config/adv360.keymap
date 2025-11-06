@@ -531,6 +531,13 @@
 			bindings = <&kp LC(V)>, <&kp LS(LC(V))>;
 		};
 
+        td_t: tap_dance_t {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;            // History: 275 > 137 > 200
+            bindings = <&kp T>, <&kp LS(T)>;
+        };
+
 		// -------------------------------------------------------------------------
 		// Home Row Mods - Left Hand
 		// -------------------------------------------------------------------------
