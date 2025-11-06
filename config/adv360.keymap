@@ -63,6 +63,7 @@
 #define THUMBS_LEFT  35 36 52 65 66 67
 #define THUMBS_RIGHT 37 38 53 68 69 70
 #define NUM_LAYER_KEYS 16 17 18 29 30 31 32 48 49 50 44
+#define E_KEY 17
 
 // -------------------------------------------------------------------------
 // Combo Timing Constants
@@ -363,7 +364,7 @@
 
 		left_bracket {
 			timeout-ms            = <COMBO_TERM_MED>;
-			require-prior-idle-ms = <150>;                   // History: 130 > 75 > 102 > 116 > 123 > 130 > 150
+			require-prior-idle-ms = <175>;                   // History: 130 > 75 > 102 > 116 > 123 > 130 > 150 > 175
 			key-positions         = <23 24>;
 			bindings              = <&mm_lbracket>;
 			layers                = <COMBOLAYERS>;
@@ -371,7 +372,7 @@
 
 		right_bracket {
 			timeout-ms            = <COMBO_TERM_MED>;
-			require-prior-idle-ms = <150>;
+			require-prior-idle-ms = <175>;
 			key-positions         = <24 25>;
 			bindings              = <&mm_rbracket>;
 			layers                = <COMBOLAYERS>;
@@ -568,9 +569,9 @@
 			bindings                   = <&kp>, <&kp>;
 			flavor                     = "hold-preferred";
 			tapping-term-ms            = <280>;
-			require-prior-idle-ms      = <220>;             // History: 170 > 220
+			require-prior-idle-ms      = <220>;             // History: 170 > 220 > 195
 			quick-tap-ms               = <QUICK_TAP>;
-			hold-trigger-key-positions = <KEYS_RIGHT THUMBS_RIGHT 17>;
+			hold-trigger-key-positions = <KEYS_RIGHT THUMBS_RIGHT E_KEY>;
 			hold-trigger-on-release;
 		};
 
@@ -663,7 +664,7 @@
 			bindings                   = <&mo>, <&kp>;
 			flavor                     = "hold-preferred";
 			hold-trigger-key-positions = <NUM_LAYER_KEYS>;
-			require-prior-idle-ms      = <189>;                    // History: 175 > 200 > 188 > 150 > 169 > 250 > 209 > 189
+			require-prior-idle-ms      = <175>;                    // History: 174 > 200 > 188 > 150 > 169 > 250 > 209 > 189 > 170
 			tapping-term-ms            = <175>;
 			quick_tap_ms               = <180>;
 		};
