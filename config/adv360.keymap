@@ -531,13 +531,6 @@
 			bindings = <&kp LC(V)>, <&kp LS(LC(V))>;
 		};
 
-        td_t: tap_dance_t {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <250>;            // History: 275 > 137 > 200 > 225 > 250
-            bindings = <&kp T>, <&kp LS(T)>;
-        };
-
 		// -------------------------------------------------------------------------
 		// Home Row Mods - Left Hand
 		// -------------------------------------------------------------------------
@@ -703,6 +696,17 @@
 			quick-tap-ms               = <QUICK_TAP>;
             hold-while-undecided;
 		};
+
+        // Hold T for capital T, tap for regular t
+        ht_t: hold_tap_t {
+            compatible            = "zmk,behavior-hold-tap";
+            #binding-cells        = <2>;
+            bindings              = <&kp>, <&kp>;
+            flavor                = "tap-preferred";
+            tapping-term-ms       = <220>;
+            quick-tap-ms          = <220>;
+            require-prior-idle-ms = <PRIOR_IDLE>;
+        };
 
 		// ESC with ALT+CTRL hold option
 		esc_acl: esc_alt_ctrl_left {
@@ -1016,7 +1020,7 @@
 		default {
 			bindings = <
 			&tog GAME  &mm_1        &mm_2        &mm_3         &mm_4         &mm_5  XXX                                                                                        &mo MOD  &mm_7  &mm_7         &mm_8         &mm_9         &mm_0           &tog GAME
-			&kp TAB    &kp Q        &kp W        &kp E         &kp R         &td_t  XXX                                                                                        XXX      &kp Y  &kp U         &kp I         &kp O         &kp P           XXX
+			&kp TAB    &kp Q        &kp W        &kp E         &kp R         &ht_t LS(T) T  XXX                                                                                        XXX      &kp Y  &kp U         &kp I         &kp O         &kp P           XXX
 			&kp ENTER  &hma LGUI A  &hms LALT S  &hmd LCTRL D  &hmf LSHFT F  &kp G  XXX                  XXX            XXX         XXX      XXX                               XXX      &kp H  &hmj RSHFT J  &hmk RCTRL K  &hml RALT L   &hmc RGUI SEMI  &kp ENTER
 			XXX        &kp Z        &kp X        &kp C         &kp V         &kp B                                      XXX         XXX                                                 &kp N  &kp M         &mm_comma     &mm_dot       &kp FSLH        XXX
 			XXX        XXX          XXX          XXX           XXX                      &ltl NAV SPACE  &lts FN LSHFT  &atb 0 DEL  &kp DEL  &mts LSHFT LSHFT  &rtl NUM SPACE                   XXX           XXX           XXX           XXX             XXX
