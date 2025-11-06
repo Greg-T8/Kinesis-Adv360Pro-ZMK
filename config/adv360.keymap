@@ -889,11 +889,11 @@
 			mods           = <(MOD_LSFT)>;
 		};
 
-		// Left brace (with shift pressed, outputs left bracket)
+		// Left brace (prevents shift from changing output)
 		mm_lbrace: mm_lbrace {
 			compatible     = "zmk,behavior-mod-morph";
 			#binding-cells = <0>;
-			bindings       = <&kp LBRC>, <&kp LBKT>;
+			bindings       = <&kp LBRC>, <&kp LBRC>;
 			mods           = <(MOD_LSFT)>;
 		};
 
@@ -905,11 +905,11 @@
 			mods           = <(MOD_LSFT)>;
 		};
 
-		// Right brace (with shift pressed, outputs right bracket)
+		// Right brace (prevents shift from changing output)
 		mm_rbrace: mm_rbrace {
 			compatible     = "zmk,behavior-mod-morph";
 			#binding-cells = <0>;
-			bindings       = <&kp RBRC>, <&kp RBKT>;
+			bindings       = <&kp RBRC>, <&kp RBRC>;
 			mods           = <(MOD_LSFT)>;
 		};
 
