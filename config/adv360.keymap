@@ -338,7 +338,7 @@
 			timeout-ms            = <COMBO_TERM_SLOW>;
 			require-prior-idle-ms = <COMBO_IDLE_SLOW>;
 			key-positions         = <32 50>;
-			bindings              = <&td_paste>;
+			bindings              = <LC(V)>;
 			layers                = <COMBOLAYERS>;
 		};
 
@@ -522,18 +522,6 @@
 		#include "version.dtsi"
 
 		// -------------------------------------------------------------------------
-		// Tap Dances
-		// -------------------------------------------------------------------------
-
-		// Paste: single tap = CTRL+V, double tap = CTRL+SHIFT+V
-		td_paste: tap_dance_paste {
-			compatible = "zmk,behavior-tap-dance";
-			#binding-cells = <0>;
-			tapping-term-ms = <275>;
-			bindings = <&kp LC(V)>, <&kp LS(LC(V))>;
-		};
-
-		// -------------------------------------------------------------------------
 		// Home Row Mods - Left Hand
 		// -------------------------------------------------------------------------
 
@@ -570,7 +558,7 @@
 			bindings                   = <&kp>, <&kp>;
 			flavor                     = "hold-preferred";
 			tapping-term-ms            = <280>;
-			require-prior-idle-ms      = <220>;             // History: 170 > 220 > 195
+			require-prior-idle-ms      = <195>;             // History: 170 > 220 > 195
 			quick-tap-ms               = <QUICK_TAP>;
 			hold-trigger-key-positions = <KEYS_RIGHT THUMBS_RIGHT E_KEY>;
 			hold-trigger-on-release;
