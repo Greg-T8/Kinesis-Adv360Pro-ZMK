@@ -338,7 +338,7 @@
 			timeout-ms            = <COMBO_TERM_SLOW>;
 			require-prior-idle-ms = <COMBO_IDLE_SLOW>;
 			key-positions         = <32 50>;
-			bindings              = <LC(V)>;
+			bindings              = <&kp LC(V)>;
 			layers                = <COMBOLAYERS>;
 		};
 
