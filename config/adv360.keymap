@@ -499,7 +499,7 @@
 
 		pipe {
 			timeout-ms            = <300>;
-			require-prior-idle-ms = <COMBO_IDLE_SLOW>;
+			require-prior-idle-ms = <150>;
 			key-positions         = <43 57>;
 			bindings              = <&kp PIPE>;
 			layers                = <COMBOLAYERS>;
