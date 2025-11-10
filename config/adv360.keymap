@@ -651,9 +651,9 @@
 			compatible                 = "zmk,behavior-hold-tap";
 			#binding-cells             = <2>;
 			bindings                   = <&mo>, <&kp>;
-			flavor                     = "hold-preferred";
+			flavor                     = "balanced";               // History: hold-preferred > balanced
 			hold-trigger-key-positions = <NUM_LAYER_KEYS>;
-			require-prior-idle-ms      = <155>;                    // History: 174 > 200 > 188 > 150 > 169 > 250 > 209 > 189 > 170 > 160 > 155
+			require-prior-idle-ms      = <130>;                    // History: 174 > 200 > 188 > 150 > 169 > 250 > 209 > 189 > 170 > 160 > 155 > 130
 			tapping-term-ms            = <175>;
 			quick_tap_ms               = <180>;
 		};
