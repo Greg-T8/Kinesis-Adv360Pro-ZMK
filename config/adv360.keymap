@@ -371,11 +371,12 @@
 		};
 
 		right_bracket {
-			timeout-ms            = <COMBO_TERM_MED>;
-			require-prior-idle-ms = <187>;
+			timeout-ms            = <35>;
+			require-prior-idle-ms = <150>;
 			key-positions         = <24 25>;
 			bindings              = <&mm_rbracket>;
 			layers                = <COMBOLAYERS>;
+            //History: {tm:70,id:187}, {tm:35,id:150}
 		};
 
 		left_angle {
