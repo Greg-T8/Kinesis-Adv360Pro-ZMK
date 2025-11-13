@@ -399,7 +399,7 @@
 		// Hold for CTRL+SHIFT, tap for parenthesis
 		lparen {
 			timeout-ms            = <COMBO_TERM_FAST>;
-			require-prior-idle-ms = <COMBO_IDLE_FAST>;
+			require-prior-idle-ms = <100>;          // History: 130 > 100
 			key-positions         = <41 42>;
 			bindings              = <&lparen_csr LS(LCTRL) 0>;
 			layers                = <COMBOLAYERS>;
@@ -408,7 +408,7 @@
 		// Hold for ALT+CTRL, tap for parenthesis
 		rparen {
 			timeout-ms            = <COMBO_TERM_SLOW>;
-			require-prior-idle-ms = <COMBO_IDLE_FAST>;
+			require-prior-idle-ms = <100>;
 			key-positions         = <42 43>;
 			bindings              = <&rparen_csr RA(RIGHT_CONTROL) 0>;
 			layers                = <COMBOLAYERS>;
