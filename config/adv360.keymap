@@ -486,7 +486,7 @@
 		};
 
 		minus {
-			timeout-ms            = <COMBO_TERM_SLOW>;
+			timeout-ms            = <300>;  // History: 270 > 300
 			key-positions         = <41 55>;
 			bindings              = <&mm_minus>;
 			layers                = <COMBOLAYERS>;
