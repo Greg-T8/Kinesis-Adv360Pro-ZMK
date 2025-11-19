@@ -571,9 +571,9 @@
 			compatible                 = "zmk,behavior-hold-tap";
 			#binding-cells             = <2>;
 			bindings                   = <&kp>, <&kp>;
-			flavor                     = "hold-preferred";
+			flavor                     = "balanced";
 			tapping-term-ms            = <280>;
-			require-prior-idle-ms      = <180>;
+			require-prior-idle-ms      = <130>;
 			quick-tap-ms               = <5>;
 			hold-trigger-key-positions = <KEYS_RIGHT THUMBS_RIGHT 17>;
 			hold-trigger-on-release;
