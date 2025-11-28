@@ -655,9 +655,9 @@
 			#binding-cells             = <2>;
 			bindings                   = <&mo>, <&kp>;
 			flavor                     = "balanced";               // History: hold-preferred > balanced
-			require-prior-idle-ms      = <130>;
+			require-prior-idle-ms      = <65>;
 			hold-trigger-key-positions = <NUM_LAYER_KEYS>;
-			tapping-term-ms            = <175>;
+			tapping-term-ms            = <88>;
 			quick_tap_ms               = <180>;
             //Balanced History: {tm:175,id:130}, {tm:88,id:65}
 		};
