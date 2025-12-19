@@ -490,7 +490,7 @@
             key-positions         = <40 54>;
             bindings              = <mm_grave>;
             layers                = <COMBOLAYERS>;
-        }
+        };
 
 		minus {
 			timeout-ms            = <300>;  // History: 270 > 300
