@@ -485,6 +485,13 @@
 			layers                = <COMBOLAYERS>;
 		};
 
+        grave {
+            timeout-ms            = <COMBO_TERM_SLOW>;
+            key-positions         = <40 54>;
+            bindings              = <mm_grave>;
+            layers                = <COMBOLAYERS>;
+        }
+
 		minus {
 			timeout-ms            = <300>;  // History: 270 > 300
 			key-positions         = <41 55>;
@@ -492,10 +499,10 @@
 			layers                = <COMBOLAYERS>;
 		};
 
-		grave {
+		tilde {
 			timeout-ms            = <COMBO_TERM_SLOW>;
 			key-positions         = <42 56>;
-			bindings              = <&kp GRAVE>;
+			bindings              = <mm_tilde>;
 			layers                = <COMBOLAYERS>;
 		};
 
@@ -834,6 +841,22 @@
 			compatible     = "zmk,behavior-mod-morph";
 			#binding-cells = <0>;
 			bindings       = <&kp BSLH>, <&kp BSLH>;
+			mods           = <(MOD_LSFT)>;
+		};
+
+		// Backtick (prevents shift from changing output)
+		mm_grave: mm_grave {
+			compatible     = "zmk,behavior-mod-morph";
+			#binding-cells = <0>;
+			bindings       = <&kp GRAVE>, <&kp GRAVE>;
+			mods           = <(MOD_LSFT)>;
+		};
+
+		// Tilde (prevents shift from changing output)
+		mm_tilde: mm_tilde {
+			compatible     = "zmk,behavior-mod-morph";
+			#binding-cells = <0>;
+			bindings       = <&kp TILDE>, <&kp TILDE>;
 			mods           = <(MOD_LSFT)>;
 		};
 
