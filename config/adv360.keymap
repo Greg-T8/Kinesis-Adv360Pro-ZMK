@@ -502,7 +502,7 @@
 		tilde {
 			timeout-ms            = <COMBO_TERM_SLOW>;
 			key-positions         = <42 56>;
-			bindings              = <mm_tilde>;
+			bindings              = <&mm_tilde>;
 			layers                = <COMBOLAYERS>;
 		};
 
