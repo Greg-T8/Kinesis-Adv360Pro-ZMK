@@ -488,7 +488,7 @@
         grave {
             timeout-ms            = <COMBO_TERM_SLOW>;
             key-positions         = <40 54>;
-            bindings              = <mm_grave>;
+            bindings              = <&mm_grave>;
             layers                = <COMBOLAYERS>;
         };
 
