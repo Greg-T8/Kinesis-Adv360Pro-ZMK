@@ -508,11 +508,11 @@
 
 		pipe {
 			timeout-ms            = <400>;
-			require-prior-idle-ms = <50>;
+			require-prior-idle-ms = <1>;
 			key-positions         = <43 57>;
 			bindings              = <&kp PIPE>;
 			layers                = <COMBOLAYERS>;
-            // History: {tm:300,id:75}, {tm: 400, id: 50}
+            // History: {tm:300,id:75}, {tm: 400, id: 50}, {tm:400, id:1}
 		};
 
 		backslash {
