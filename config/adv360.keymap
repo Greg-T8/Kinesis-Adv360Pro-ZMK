@@ -363,21 +363,21 @@
 		};
 
 		left_bracket {
-			timeout-ms            = <35>;
+			timeout-ms            = <20>;
 			require-prior-idle-ms = <100>;
 			key-positions         = <23 24>;
 			bindings              = <&mm_lbracket>;
 			layers                = <COMBOLAYERS>;
-            // History: {tm:70,id:187}, {tm:35,id:100}
+            // History: {tm:70,id:187}, {tm:35,id:100}, {tm:20, id:100}
 		};
 
 		right_bracket {
-			timeout-ms            = <35>;
+			timeout-ms            = <20>;
 			require-prior-idle-ms = <100>;
 			key-positions         = <24 25>;
 			bindings              = <&mm_rbracket>;
 			layers                = <COMBOLAYERS>;
-            //History: {tm:70,id:187}, {tm:35,id:150}, {tm:35,id:100}
+            //History: {tm:70,id:187}, {tm:35,id:150}, {tm:35,id:100}, {tm:20, id:100}
 		};
 
 		left_angle {
