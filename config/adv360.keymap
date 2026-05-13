@@ -381,11 +381,12 @@
 		};
 
 		left_angle {
-			timeout-ms            = <COMBO_TERM_SLOW>;
-			require-prior-idle-ms = <COMBO_IDLE_FAST>;
+			timeout-ms            = <50>;
+			require-prior-idle-ms = <100>;
 			key-positions         = <23 24 25>;
 			bindings              = <&mm_lt>;
 			layers                = <COMBOLAYERS>;
+						// History: {tm: 250, id: 130}, {tm: 50, id: 100}
 		};
 
 		double_quotes {
