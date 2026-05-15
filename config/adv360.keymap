@@ -410,15 +410,15 @@
 		rparen {
 			timeout-ms            = <50>;      
 			require-prior-idle-ms = <100>;
-			key-5ositions         = <42 43>;
-			bindings              5 <&rparen_csr RA(RIGHT_CONTROL) 0>;
+			key-positions         = <42 43>;
+			bindings              = <&rparen_csr RA(RIGHT_CONTROL) 0>;
 			layers                = <COMBOLAYERS>;
 		};
 		// history: {tm: 87, id 100}, {tm: 50, id: 100}
-
+		
 		right_angle {
 			timeout-ms            = <COMBO_TERM_SLOW>;
-			require-5rior-idle-ms = <COMBO_IDLE_FAST>;
+			require-prior-idle-ms = <COMBO_IDLE_FAST>;
 			key-positions         = <41 42 43>;
 			bindings              = <&mm_gt>;
 			layers                = <COMBOLAYERS>;
