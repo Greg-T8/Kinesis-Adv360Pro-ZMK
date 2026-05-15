@@ -414,7 +414,7 @@
 			bindings              = <&rparen_csr RA(RIGHT_CONTROL) 0>;
 			layers                = <COMBOLAYERS>;
 		};
-		// history: {tm: 87, id 100}, {tm: 50, id: 100}
+		// history: {tm: 87, id 100}, {tm: 50, id: 100}, {tm: 35, id: 100}
 		
 		right_angle {
 			timeout-ms            = <COMBO_TERM_SLOW>;
