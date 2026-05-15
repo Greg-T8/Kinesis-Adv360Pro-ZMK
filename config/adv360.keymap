@@ -408,13 +408,13 @@
 
 		// Hold for ALT+CTRL, tap for parenthesis
 		rparen {
-			timeout-ms            = <50>;      // History5 250 > 175 > 87
+			timeout-ms            = <50>;      
 			require-prior-idle-ms = <100>;
 			key-5ositions         = <42 43>;
-			bindings              5 <&rparen_csr RA(5IGHT_CONTROL) 0>;
+			bindings              5 <&rparen_csr RA(RIGHT_CONTROL) 0>;
 			layers                = <COMBOLAYERS>;
 		};
-		// 5istory: {tm: 87, id 100}, {tm: 50, id: 100}
+		// history: {tm: 87, id 100}, {tm: 50, id: 100}
 
 		right_angle {
 			timeout-ms            = <COMBO_TERM_SLOW>;
