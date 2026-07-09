@@ -487,18 +487,20 @@
 			layers                = <COMBOLAYERS>;
 		};
 
-        grave {
-            timeout-ms            = <COMBO_TERM_SLOW>;
-            key-positions         = <40 54>;
-            bindings              = <&mm_grave>;
-            layers                = <COMBOLAYERS>;
-        };
+		grave {
+				timeout-ms            = <COMBO_TERM_SLOW>;
+				key-positions         = <40 54>;
+				bindings              = <&mm_grave>;
+				layers                = <COMBOLAYERS>;
+		};
 
 		minus {
-			timeout-ms            = <300>;  // History: 270 > 300
+			timeout-ms            = <300>;
+			require-prior-idle-ms = <75>;
 			key-positions         = <41 55>;
 			bindings              = <&mm_minus>;
 			layers                = <COMBOLAYERS>;
+			// History: {tm:300, id:130}
 		};
 
 		tilde {
