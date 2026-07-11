@@ -495,8 +495,7 @@
 		};
 
 		minus {
-			timeout-ms            = <300>;
-			require-prior-idle-ms = <75>;
+			timeout-ms            = <500>;
 			key-positions         = <41 55>;
 			bindings              = <&mm_minus>;
 			layers                = <COMBOLAYERS>;
