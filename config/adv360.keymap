@@ -1039,7 +1039,7 @@
 
 		default {
 			bindings = <
-			&tog GAME  &kp 1        &kp 2        &kp 3         &kp 4         &kp 5          &kp 6                                                                                      &mo MOD  &kp 6  &kp 7         &kp 8         &kp 9         &kp 0           &tog GAME
+			&tog GAME  &kp N1        &kp N2        &kp N3         &kp N4         &kp N5          &kp N6                                                                                      &mo MOD  &kp N6  &kp N7         &kp N8         &kp N9         &kp N0           &tog GAME
 			&kp TAB    &kp Q        &kp W        &kp E         &kp R         &ht_t LS(T) T  XXX                                                                                        XXX      &kp Y  &kp U         &kp I         &kp O         &kp P           XXX
 			&kp ENTER  &hma LGUI A  &hms LALT S  &hmd LCTRL D  &hmf LSHFT F  &kp G          XXX                   XXX           XXX         XXX      XXX                               XXX      &kp H  &hmj RSHFT J  &hmk RCTRL K  &hml RALT L   &hmc RGUI SEMI  &kp ENTER
 			XXX        &kp Z        &kp X        &kp C         &kp V         &kp B                                              XXX         XXX                                                 &kp N  &kp M         &mm_comma     &mm_dot       &kp FSLH        XXX
