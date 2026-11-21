@@ -209,6 +209,15 @@
         //     layers                = <COMBOLAYERS>;
         // };
 
+		// Herdr prefix (F12) for quick access to Herdr commands
+		herdr_prefix {
+				timeout-ms = <70>;
+				key-positions = <66 69>;
+				bindings = <&kp F12>;
+				layers = <DEFAULT>;
+		};
+
+
 		// -------------------------------------------------------------------------
 		// Left Hand - Horizontal Combos
 		// -------------------------------------------------------------------------
