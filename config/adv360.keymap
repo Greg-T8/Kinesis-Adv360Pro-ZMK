@@ -438,11 +438,11 @@
 			layers                = <COMBOLAYERS>;
 		};
 
-		// Emit three backticks with the M + comma + period chord
+		// Emit three backticks with the mirrored X + C + V chord
 		triple_backtick {
 			timeout-ms            = <COMBO_TERM_SLOW>;
 			require-prior-idle-ms = <COMBO_IDLE_FAST>;
-			key-positions         = <55 56 57>;
+			key-positions         = <48 49 50>;
 			bindings              = <&triple_backtick>;
 			layers                = <COMBOLAYERS>;
 		};
