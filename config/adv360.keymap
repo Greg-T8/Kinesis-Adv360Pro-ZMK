@@ -165,6 +165,19 @@
 			;
 		};
 
+		// Emit three backticks for Markdown code fences
+		triple_backtick: triple_backtick {
+			compatible     = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			wait-ms = <40>;
+			tap-ms  = <40>;
+			bindings
+			= <&macro_tap &kp GRAVE>
+			, <&macro_tap &kp GRAVE>
+			, <&macro_tap &kp GRAVE>
+			;
+		};
+
 		// En dash (–) via Unicode
 		endash: endash {
 			compatible     = "zmk,behavior-macro";
@@ -422,6 +435,15 @@
 			require-prior-idle-ms = <COMBO_IDLE_FAST>;
 			key-positions         = <41 42 43>;
 			bindings              = <&mm_gt>;
+			layers                = <COMBOLAYERS>;
+		};
+
+		// Emit three backticks with the M + comma + period chord
+		triple_backtick {
+			timeout-ms            = <COMBO_TERM_SLOW>;
+			require-prior-idle-ms = <COMBO_IDLE_FAST>;
+			key-positions         = <55 56 57>;
+			bindings              = <&triple_backtick>;
 			layers                = <COMBOLAYERS>;
 		};
 
